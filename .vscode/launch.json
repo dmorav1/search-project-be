@@ -11,7 +11,11 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+<<<<<<< HEAD
             "program": "${workspaceFolder}/src/index.ts",
+=======
+            "program": "${workspaceFolder}/src/index.js",
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
             "runtimeArgs": [
                 "--require=dotenv/config"
             ]

@@ -194,5 +194,9 @@ $RECYCLE.BIN/
 # Postgres data files
 data
 dist
+<<<<<<< HEAD
 .vscode
+=======
+
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 # End of https://www.toptal.com/developers/gitignore/api/node,windows,linux,macos

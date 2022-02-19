@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"demo_information":[
     {
         
@@ -17,50 +18,157 @@
         "short_description":"This is a demo of the information page",
         "created_at":"2020-05-06T18:00:00.000Z",
         "is_active":true
+=======
+{"demo_discussions":[
+    
+    {
+        "title": "Retos de programación en cualquier lenguaje - Primer nivel: salida de mensajes",
+        "content": "Cuando aprendes a programar uno de los principales retos es refozar el aprendizaje para que fluya.\r\nPor este motivo te comparto una serie de ejercicios para nunca pares de aprender que además pueden ir enriqueciendo tu repositorio personal.\r\n\r\nEstos ejercicios pueden ser aplicados a tu lenguaje de programación favorito, harás uso de lógica y matemática sencilla. Conforme avancemos el nivel de dificultad aumentará 💪\r\nNo existe una respuesta única ya que puedes resolverlos de distinta forma.\r\n\r\nRecuerda compartirnos el código de tu solución y/o repositorio 😉\r\nReto #1 “Hola Mundo”\r\nInstrucciones: este es un clásico de clásicos, pero haremos un pequeño cambio. En lugar de solo imprimir un mensaje en pantalla, pedirás al usuario que digite un nombre y mostrarás en pantalla lo siguiente: Hola, [nombre]\r\nReto #2 “Hola… nombre y apellido:”\r\nInstrucciones: Ahora que sabemos incluir nombres, podemos agregar más datos. Intentemos con un apellido para tener algo así: ``Hola, [nombre] [apellido]```\r\nReto #3 “Mensaje multilínea”\r\nInstrucciones: seguro has visto que en Platzi hay más de 600 cursos ¿puedes mostrar a que categorías corresponden en una sola línea de código?\r\nDebe mostrarse así:\r\nPlatzi cuenta con cursos de:\r\n[categoría1]\r\n[categoría2]\r\n[categoría3]\r\n[categoría4]\r\n[categoría5]\r\n[categoría6]\r\nReto #4 “Suma de enteros”\r\nInstrucciones: otro clásico conocido, donde pedirás al usuario que ingrese 2 números y muestre en pantalla el resultado. Si quieres añadir más dificultad puedes utilizar números con punto decimal y especificar el número de decimales después del punto.\r\nEjemplo: 2.5633 + 5.6883 = 8.25\r\nReto #5 “Suma y multiplicación”\r\nInstrucciones: añadiendo un extra al reto anterior ahora el usuario ingresará 3 números, sumarás los 2 primeros y el resultado será multiplicado por el tercero. Añade las consideraciones del punto decimal del reto anterior.\r\nEjemplo:\r\nDatos de entrada:2, 3, 4\r\nResultado:20\r\nReto #6 “Resta de pizzas”\r\nInstrucciones: llegaste a una fiesta con X cantidad de rebanadas de pizza (indicadas por el usuario), después de un rato se consumió Y cantidad de rebanadas y quedan Z. Fácil ¿cierto?\r\nEl reto está en que expreses lo que sucede es una forma comprensible para cualquier persona, imprescindible pensar en tus usuarios 😉\r\nReto #7 “Edad futura y pasada”\r\nInstrucciones: pide al usuario que indique su nombre y su edad. Como mensaje de salida le indicarás que edad tuvo el año pasado y cuantos años tendrá el siguiente año.\r\nEjemplo: [nombre] el año pasado tenías X años y el próximo año cumplirás Y años.\r\nReto #8 “Divide la cuenta”\r\nInstrucciones: vas con tus amigos a tu restaurante favorito y acuerdan dividir la cuenta. Para facilitar las cosa pedirás al usuario que indique el total a pagar, entre cuantas personas se dvidirá la cuenta, porcentaje de propina a incluir, un porcentaje de impuestos, total a pagar incluyendo propina más impuestos y el total a pagar por cada persona.\r\nReto #9 “Calculando días”\r\nInstrucciones: escribe un programa al que le indiques una cantidad de días y como resultado deberá mostrar cuantas horas, minutos y segundos hay en dicha cantidad de días.\r\nReto #10 “Conversor de millas”\r\nInstrucciones: hay 1.609344 km en una milla (mi). Escribe un programa en el que el usuario indique una cantidad de millas y muestre en pantalla el resultado convertido a kilómetros.\r\nReto #11 “Cuantas veces un número en otro”\r\nInstrucciones: pide al usuario ingresar un número mayor a 1000 y otro menor a 100. Indica de una forma sencilla de entender al usuario cuantas veces cabe el número menor a 100 en el número mayor a 1000",
+        "category_id": 1,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    },
+    {
+        "title": "#100DaysOfEnglish - Day #1",
+        "content": "Únete al reto de #100DaysOfEnglish y creemos un habito. Dedícale al menos 30 minutos diarios a resolver el reto complementándolo con una clase de inglés. 😉\r\n\r\nLET’S START! 🏃‍♀️\r\n\r\nDAY 1 💪\r\n\r\nWrite 3 sentences about yourself",
+        "category_id": 3,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    },
+    {
+        "title": "Margintrading, Short, long",
+        "content": "¿Como funciona por detrás una operación en corto?\r\n\r\nComplementando un poco lo que es una posición short (conocido como “ir en corto”), según como yo lo entiendo:\r\n\r\nUna posición short se compone de 2 fases, primero la del arriendo o alquiler del activo y segundo devolución del alquiler. Me explico:\r\n\r\n1.- En la primera fase, un trader que quiere tomar una posición en corto, es porque en su análisis estima que el mercado irá a la baja, por lo tanto pide en arriendo un activo a un prestamista por el tiempo que dure su posición. Inmediatamente el trader con ese activo en su mano lo vende al precio de mercado.\r\n\r\n2.- En la segunda fase, corresponde al cierre de la operación. Y el trader debe recomprar ese activo a un precio X, para devolverle al prestamista su activo, ya que el trader tiene un deuda con el prestamista. Por lo tanto si el mercado baja o el valor del activo en cuestión baja de precio desde que el trader abrió la posición en short, el trader habrá ganado el profit que se genero al vender un activo mas caro de lo que lo recompro cuando tuvo que devolverlo. En cambio, si el mercado subio o el activo subio de valor, desde que el trader abrió su posicion en corto, habrá perdido dinero ya que el valor del activo que tuvo que recomprar para devolverle al prestamista al cierre de su operación, fue mas caro de lo que el estimaba en su análisis.\r\n\r\nPor ejemplo:\r\n\r\nQue pasa cuando Juanito abre una operación en corto de BTC:\r\n\r\n1 BTC tiene un precio de mercado de 5.000 USD\r\n\r\nJuanito pide en arriendo y vende inmediatamente 1 BTC que tiene un valor de 5.000 USD, por lo tanto Juanito vendió 1 BTC en 5.000 USD.\r\n\r\nEl mercado baja a 1 BTC a 4.500 USD\r\nJuanito cierra su posición, recomprando 1 BTC a 4.500 USD y devolviéndole al prestamista su BTC que el tomo en arriendo por el tiempo que duró la operación en corto.\r\n\r\nAl cierre de la posición Juanito ha ganado 500 USD menos los el valor del arriendo del BTC que cobra el prestamista, que por lo general equivalen a un porcentaje menor de la transacción (nada es gratis en la vida amigos míos).\r\n\r\nMUY IMPORTANTE: Si el mercado se fue al alza, y Juanito tiene una posición en corto, Juanito se fué a la “B”. ¿Por qué?\r\n\r\nPorque si al cerrar la operación en corto, el BTC no bajó a 4.500 USD y subió a 5.500 USD, Juanito ha perdido 500 USD. Ya que debe devolver 1 BTC que cuando el lo arrendó y lo vendió costaba 5.000 USD y ahora debe recomprarlo a 5.500 USD, además de pagar el costo del alquiler del BTC.\r\n\r\nEntonces tu puedes pensar \" Pero si Juanito no cierra la posición en corto no pierde… entonces para que la cierra\", por 2 razones, la primera es que en su análisis Juanito dijo, “bueno mi perdida que yo puedo tolerar en esta operacion es de 500 USD”; por lo tanto puso un Stop Loss o Stop Limit (no son lo mismo, pero es muy parecido) en el que se cierre la operación si el mercado subía a 5.500. Y el otro motivo es que el mercado subió tanto (si estás muy apalancado, no tiene que ser mucho) que Juanito se quedo sin fondos para garantizarle al prestamista que le devolverá lo que le pidió en arriendo y para pagar los costos del arriendo, y el exchange liquida y cierra su posición por falta de fondos, y Juanito se quedan sin saldo en su cuenta. Ahí si, Juanito ni siquiera está en la “B” sino que se fue a la liga amateur.\r\n\r\nPor cierto, todo esto se resumen en la explicación que dió Javier de como operar un short.\r\n\r\nSi le erré en algo a la explicación, encantado de escuchar sus comentarios, porque no soy un experto en el tema, mas bien soy un aficionado, buscando profesionalizarme en el trading.",
+        "category_id": 4,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    },
+    {
+        "title": "Cómo negociar con inversores para levantar capital con tu startup",
+        "content": "Hay 3 aspectos realmente importantes:\r\n\r\nLograr un resultado bueno y justo,\r\n\r\n“buen trato significa que ninguna de las partes está feliz”\r\n\r\nNo matar tu relación personal llegando allí,\r\n\r\nComprender el trato que está haciendo.\r\n\r\nConcéntrese en la valoración, el grupo de opciones sobre acciones, las preferencias de liquidación, la junta y los controles de votación: comprenda esos términos y lo que implican.\r\n\r\nPrepárate\r\nComprender los siguientes términos y lo que implican: valoración (antes y después del dinero), descuento, grupo de opciones sobre acciones, preferencias de liquidación, directorio y controles de votación.\r\nTen un Plan: determina cuánto quieres recaudar, a qué estás dispuesto a renunciar, haz el ejercicio de definir tu BATNA (la mejor alternativa al acuerdo negociado) es decir, define cuáles son tus alternativas si no alcanzas el acuerdo esperado.\r\nInvestigue un poco sobre los capitalistas de riesgo e inversores con los que se reunirá. Consulte su sitio web, mire el perfil de Linkedin del equipo, busque en Google los nombres de las empresas y verifique la “actualidad”, solicite una referencia al inicio de su cartera si conoce alguna.\r\nDescubre tu superpoder y la kriptonita de tu adversario.\r\nCoopere, sea transparente y actúe con honestidad (cf. Prisoner Dilema Theory, juego repetido), ya que el juego no es el trato en sí, sino la larga relación que tendrá con su inversor después del trato, debe cooperar y actuar con honestidad y la misma para el inversor; esto es clave para preservar su reputación y capacidad para ganar en el futuro.\r\nTenga en cuenta que hay diferentes tipos de negociadores (The Bully, The Nice Guy, el tecnócrata, el nunca feliz, etc.) y esté listo para cada tipo.\r\nConsejos claves para levantar capital\r\nPara recaudar dinero debes estar convencido de que estás recaudando dinero. No hay “Estoy tratando de recaudar dinero”.\r\nSi quieres dinero, pide consejo.\r\nLos fundadores no pueden ni deben subcontratar su participación en una financiación a sus abogados.\r\nHable con sus cofundadores sobre cómo se resolverá el conflicto o la desaparición de los fundadores antes de que realmente ocurra.\r\nLos directores generales o socios generales tienen el mojo dentro de las firmas de capital riesgo. Si tiene a alguien más buscándolo o trabajando en el trato con usted (asociado, asociado senior, director, socio de riesgo o EIR), trátelo con un gran respeto, pero insista en desarrollar una relación directa con un médico o un médico de cabecera también. .\r\nAlgunos de los términos que discutimos en el libro, como los derechos de pago por juego y los derechos de arrastre, están diseñados específicamente para ayudar a los VC a forzar un cierto tipo de comportamiento en los ángeles (y otros inversores de VC) en estas difíciles rondas de financiamiento.\r\nSi su grupo de ángeles es una lista pequeña y difusa de amigos y familiares, considere establecer una sociedad limitada de propósito especial controlada por uno de ellos como un vehículo para que inviertan. No es divertido perseguir 75 firmas cuando se quiere financiar o vender la empresa.\r\nLos mentores son geniales. No hay razón para no darle a alguien una pequeña tarifa de éxito si realmente lo ayudan a recaudar dinero (las presentaciones por correo electrónico al azar de un VC que conocieron una vez en un cóctel no cuentan). A veces, tendrá sentido compensar a los mentores con opciones siempre que tenga algún control sobre la concesión de las opciones en función de su satisfacción con el desempeño del mentor como asesor continuo.\r\nSi está recaudando su primera ronda de financiamiento y no tiene ingresos ni producto, un VC que solicita una proyección financiera detallada a cinco años y luego procede a martillarlo en los números probablemente no sea alguien que tenga mucha experiencia o comodidad en la etapa inicial. inversiones.\r\nSi no puede comprometerse a enviar a sus accionistas un presupuesto y estados financieros, no debe contratar inversores externos.\r\nLos mejores VC le darán, de forma proactiva o reactiva, una lista de todos los emprendedores con los que han trabajado en el pasado y le pedirán que elija algunos para verificar las referencias. Las mejores comprobaciones de referencia son aquellas que puede hacer cuando la empresa pasó por momentos difíciles, tal vez cambió a un fundador por otro CEO, o incluso falló, ya que aprenderá de ellos cómo manejó el VC situaciones desordenadas y adversas.\r\nSi un VC transmite un trato con usted, solicite la retroalimentación. No reaccione, ¡escúchelo!\r\nencontrar un VC líder. Esta es la empresa que va de abajo hacia abajo en la hoja de términos, asumirá un papel de liderazgo en la conducción hacia la financiación y probablemente sea su nuevo inversor más activo.",
+        "category_id": 3,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    },
+    {
+        "title": "¡Platzily de Master quiere invitarte a su MVP!",
+        "content": "Así como lo lees!, este próximo miércoles 15 de diciembre queremos invitarte a presenciar lo que puedes llegar a hacer en Platzi Master de la mano de nuestros estudiantes!\r\n\r\n¿Qué es Platzily?\r\nPlatzily es el nombre del proyecto que un grupo de estudiantes de Platzi Master quisieron replicar, tomando como modelo a Bitly, que es el acortador de URL’s más usado del momento, como proyecto interno en el programa.\r\n\r\nEste grupo de estudiantes decidieron ir un paso más allá y junto con nuestro technical Expert Santiago Sánchez quisieron trabajar en un ambiente de Startup cada sábado en la mañana para crear su proyecto llamado Platzily que es un acortador de URL’s.\r\n\r\n¿Cómo así trabajar en un ambiente tipo Startup?\r\nCon Platzily quisimos hacer un modelo de Startup desde cero, desde la creación de los equipos, diagramas de arquitecturas, metodologías ágiles y experimentar los cambios repentinos que tenemos en este tipo de ambientes.",
+        "category_id": 2,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    },
+    {
+        "title": "Spark AR: crea filtros de realidad aumentada",
+        "content": "¿Qué es Spark AR?\r\n\r\nSpark AR Studio es la plataforma gratuita creada por Facebook (ahora Meta) para crear experiencias de Realidad Aumentada.\r\n\r\nEstas experiencias las puede usar cualquier persona en el mundo, solo usando un dispositivo móvil, a través de las aplicaciones de Facebook, Instagram, Messenger y Portal.\r\n\r\n¿Para qué sirve ?\r\n\r\nEsta herramienta sirve para crear filtros de realidad aumentada, cuenta con características como:\r\n\r\nRastreo de rostro, el cual puede reconocer un rostro, cejas, ojos, pestañas o gestos que hagamos con el rostro y todo esto nos sirve para crear filtros faciales en lo que podamos poner maquillaje, máscaras, cambiar el color de ojos, hacer deformaciones en el rostro.\r\n\r\nTambién podemos usar el rastreo de Mano, que nos ayudará a poder colocar objetos en 2D o 3D, muy útil para visualizar productos, como por ejemplo; te imaginas tener la llama de los olímpicos en tus manos?\r\n\r\nActualmente las empresas están buscando la manera de crear nuevas experiencias a sus usuarios, el rastreo de superficie abrió las puertas a muchas empresas que quieren mostrar sus productos y los usuarios puedan saber cómo se ve un objeto en su casa antes de comprarlo, objetos como por ejemplo, puedes ver como se ve y combina el nuevo sofá en tu casa antes de comprarlo.\r\n\r\nLa realidad aumentada hoy en día nos permite crear proyectos en cualquier ámbito.\r\n\r\n¿Qué necesitas para aprender a usar Spark AR?\r\n\r\nCualquier persona puede crear efectos con Spark Ar Studio y publicarlos en Instagram, Facebook o Messenger, necesitarás de un computador, ya sea que tengas Mac o PC, solo debes tener en cuenta los requerimientos básicos, que se encuentran en la página de Spark AR, en la sección de aprender y descargas.\r\n\r\nSeria grandioso que tuvieras conocimientos básicos en Photoshop y también en un programa 3D, si no tienes estos conocimientos te recomiendo el curso básico de Photoshop, curso de Cinema 4D que también puedes aprenderlos en Platzi.\r\n\r\n¿Qué tipo de contenido se puede crear usando Spark AR?\r\n\r\nNo importa si recién comienzas o si eres un profesional experimentado, puedes crear contenido en proyectos personales donde puedes experimentar y mostrar al mundo la creatividad que hay en ti.\r\n\r\nSpark AR Studio, nos permite crear contenido en cualquier ámbito, un ejemplo de esto es National Geographic, creo un filtro sabiendo que por ahora las personas no pueden ir a marte, pero si estar mas cerca, esta experiencia de realidad aumentada de NatGeo desarrollada con la NASA puede ser lo más cercana posible. ¿Quieres conocerlo? Puedes probar en tu celular el Rover que enviaron a la Nasa en este [enlace:](https://www.instagram.com/ar/402728854382905/](https://www.instagram.com/ar/402728854382905/)\r\n\r\n\r\nOtro ejemplo es un filtro de realidad aumentada para un perfume fuera de lo común, pues su diseño es un robot y en su tapa al acercar el celular activa un filtro, donde el diseño del robot cobra vida con la ayuda de la realidad aumentada, el personaje interactúa con la persona, ¡estando alrededor!\r\n",
+        "category_id": 2,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    },
+    {
+        "title": "eSports + Marketing la apuesta ganadora",
+        "content": "Desde el 2006 la industria de los videojuegos ha sido superior, a sus entonces pares e industrias históricas, como lo son la música y el cine.\r\n\r\nHoy, no solo hay una demarcada diferencia, sino que la tendencia indica crecimientos exponenciales en años futuros.\r\n\r\nhttps://i.imgur.com/pyVnVti.png\r\nFuente: En Digital\r\n\r\nPor eso es importante hoy tocar el tema de los eSports ⚽, pero primero:\r\n\r\n¿Qué son los eSports?\r\nLos eSports son en conjunto, las competiciones de deportes electrónicos en donde se vea implícito un ordenador.\r\n\r\n¿Por qué se considera este un deporte si no hay una implicación atlética?\r\nActualmente, se reconocen como deportes, inclusive competiciones, en las que el componente físico dejó de ser necesario, un ejemplo: el ajedrez ♟️\r\n\r\nSin embargo, muchas personas apelan al criterio de que el ajedrez implica el uso de la lógica y componentes de estrategia más elaborados, distintos por ejemplo de un videojuego que puede ser fácilmente utilizado y en muchos casos es intuitivo.\r\n\r\nY aunque se esté generalizando y errando en el criterio en este punto de vista, también es erróneo ver a los eSports como un juego de destreza lógica.\r\n\r\nPor el contrario, los eSports se asemejan más a deportes donde esté implícita una maquinaria para que se lleve a cabo, y ¿qué deportes tienen que ser usados mediante máquinas? Exacto, la Formula 1.\r\n",
+        "category_id": 4,
+        "user_id": 1,
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "status_id": 1,
+        "is_active": true,
+        "discussion_version_no": 1
+    }
+
+],
+    "categories": [
+    {
+        
+        "description": "Inglés",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 
     },
     {
         
+<<<<<<< HEAD
         "title":"Cat Image 3",
         "description":"This is a demo of the information page",
         "photo": "https://thiscatdoesnotexist.com/",
         "short_description":"This is a demo of the information page",
         "created_at":"2020-05-06T18:00:00.000Z",
         "is_active":true
+=======
+        "description": "Comunidad",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 
     },
     {
         
+<<<<<<< HEAD
         "title":"Cat Image 4",
         "description":"This is a demo of the information page",
         "photo": "https://thiscatdoesnotexist.com/",
         "short_description":"This is a demo of the information page",
         "created_at":"2020-05-06T18:00:00.000Z",
         "is_active":true
+=======
+        "description": "Startups",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 
     },
     {
         
+<<<<<<< HEAD
         "title":"Cat Image 5",
         "description":"This is a demo of the information page",
         "photo": "https://thiscatdoesnotexist.com/",
         "short_description":"This is a demo of the information page",
         "created_at":"2020-05-06T18:00:00.000Z",
         "is_active":false
+=======
+        "description": "Marketing",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 
     },
     {
         
+<<<<<<< HEAD
         "title":"Cat Image 6",
         "description":"This is a demo of the information page",
         "photo": "https://thiscatdoesnotexist.com/",
         "short_description":"This is a demo of the information page",
         "created_at":"2020-05-06T18:00:00.000Z",
         "is_active":true
+=======
+        "description": "Diseño y UX",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 
     },
     {
         
+<<<<<<< HEAD
         "title":"Cat Image 7",
         "description":"This is a demo of the information page",
         "photo": "https://thiscatdoesnotexist.com/",
@@ -75,4 +183,74 @@
 ]
 
 
+=======
+        "description": "Desarrollo e Ingeniería",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+
+    }
+
+   
+],
+"discussion_statuses": [
+    {
+        "description": "New",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Edited",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Banned",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Deleted",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+    }
+],
+"contribution_node_types":[
+    {
+        "description": "Root",
+        "created_at": "2022-01-25T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Node",
+        "created_at": "2022-01-25T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Leaf",
+        "created_at": "2022-01-25T00:00:00.000Z",
+        "is_active": true
+    }
+],
+"contribution_types":[
+    {
+        "description": "Comment",
+        "created_at": "2022-01-25T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Question",
+        "created_at": "2022-01-25T00:00:00.000Z",
+        "is_active": true
+    },
+    {
+        "description": "Answer",
+        "created_at": "2022-01-25T00:00:00.000Z",
+        "is_active": true
+    }
+]
+
+
+
+
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
 }

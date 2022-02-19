@@ -11,7 +11,10 @@
         "sourceMap": true,
         "outDir": "./dist",
         "baseUrl": ".",
+<<<<<<< HEAD
         "resolveJsonModule": true,
+=======
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
         "paths": {
             "*": [
                 "node_modules/*"
@@ -20,11 +23,18 @@
     },
     
     "include": [
+<<<<<<< HEAD
         "src/**/*",
         ".sequelizerc"
     ],
     "exlude": [
         "node_modules",
         "src/db/migrations/20220219164625-information-migration.js"
+=======
+        "src/**/*"
+    ],
+    "exlude": [
+        "node_modules",
+>>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
     ]
 }
