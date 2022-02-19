@@ -1,10 +1,24 @@
 import { Pool } from "pg"
 import {config} from "../config/config"
 
-// const USER = encodeURIComponent(config.dbUser)
-// const PASSWORD = encodeURIComponent(config.dbPassword)
-// const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
+const USER = encodeURIComponent(config.dbUser)
+const PASSWORD = encodeURIComponent(config.dbPassword)
+let URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
 
+if (config.isProd){
+    URI = config.dbUrl
+}
+const options: any = {
+
+    connectionString: URI
+
+
+}
+if (config.isProd){
+    options.ssl = {
+        rejectUnauthorized: false
+    }
+}
 class Postgres {
     connection: Pool
 
@@ -23,19 +37,8 @@ class Postgres {
      async getConnection() {
 
         try {
-            if (!this.connection) {
-               this.connection = new Pool(
-                   {
-                        host: config.dbHost,
-                        user: config.dbUser,
-                        password: config.dbPassword,
-                        database: config.dbName,
-                        max: config.dbMaxConnections,
-                        idleTimeoutMillis: config.dbIdleTimeoutMillis,
-                        connectionTimeoutMillis: config.dbConnectionTimeoutMillis
-                   }
-
-                )
+            if (!this.connection ) {
+               this.connection = new Pool(options)
                 console.log('Connected succesfully')
             }
             return this.connection

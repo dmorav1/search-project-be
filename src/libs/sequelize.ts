@@ -5,18 +5,32 @@ import {setupModels} from "../db/models"
 
 const USER = encodeURIComponent(config.dbUser)
 const PASSWORD = encodeURIComponent(config.dbPassword)
-const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
+let URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
 
+if (config.isProd){
+    URI = config.dbUrl
+}
+const options: any = {
+    dialect: 'postgres',
+    logging: !config.isProd,
+    schema: config.dbSchema
+
+}
+if (config.isProd){
+    options.dialectOptions =  {
+        ssl: {
+            rejectUnauthorized: false
+        }
+    }
+}
 
 const sequelize= new Sequelize( URI,
     {
-    dialect: 'postgres',
-    logging: true,
-    schema: config.dbSchema
+
 })
 
 setupModels(sequelize)
 
-sequelize.sync({force: false})
+// sequelize.sync({force: false})
 
-export {sequelize}
+export =sequelize

@@ -11,6 +11,7 @@
         "sourceMap": true,
         "outDir": "./dist",
         "baseUrl": ".",
+        "resolveJsonModule": true,
         "paths": {
             "*": [
                 "node_modules/*"
@@ -19,9 +20,11 @@
     },
     
     "include": [
-        "src/**/*"
+        "src/**/*",
+        ".sequelizerc"
     ],
     "exlude": [
         "node_modules",
+        "src/db/migrations/20220219164625-information-migration.js"
     ]
 }

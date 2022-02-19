@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "3ac67653-1986-4471-9b0a-456f921d54e7",
+		"name": "search-be Endpoints Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Information",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"var jsonData = pm.response.json();\r",
+							"var jsonFilter = jsonData.filter(i => i.isActive === true )\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.expect(jsonData.length).to.equal(jsonFilter.length);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/information",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"information"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Information",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/information",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"information"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1465"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5b9-XvFbh9ffann+tIJ8OWd0A95VH/I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 22:41:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Cat Image 1\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Cat Image 2\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Cat Image 3\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Cat Image 4\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Cat Image 6\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Cat Image 7\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Information detailed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"var jsonData = pm.response.json();\r",
+							"var idParam = parseInt(pm.variables.get(\"id\"))\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.expect(jsonData.id).to.equal(idParam);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/information/{{id}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"information",
+						"{{id}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Information detailed",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/information/{{id}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"information",
+								"{{id}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "243"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f3-GwrCmDhz+lbIvlE3Vnry9mFPsDg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 22:40:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"title\": \"Cat Image 3\",\n    \"photo\": \"https://thiscatdoesnotexist.com/\",\n    \"description\": \"This is a demo of the information page\",\n    \"shortDescription\": \"This is a demo of the information page\",\n    \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n    \"isActive\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Information with filter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"var queryParams= pm.queryParams\r",
+							"var jsonData = pm.response.json();\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.expect(jsonData.length).to.equal(1);\r",
+							"});\r",
+							"var totalFilter= jsonData.filter(i=> i.title.includes(queryParams.title))\r",
+							"pm.test(\"Body contains title\", function () {\r",
+							"    pm.expect(totalFilter.length).to.equal(jsonData.length);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/information?title=3",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"information"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Information with filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/information?title=3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"information"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "245"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f5-+vgDn4qMK1nxwtSmTPJNZQ8dWZk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 22:45:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"title\": \"Cat Image 3\",\n        \"photo\": \"https://thiscatdoesnotexist.com/\",\n        \"description\": \"This is a demo of the information page\",\n        \"shortDescription\": \"This is a demo of the information page\",\n        \"createdAt\": \"2020-05-06T18:00:00.000Z\",\n        \"isActive\": true\n    }\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "3",
+			"type": "string"
+		}
+	]
+}

@@ -1,5 +1,6 @@
-interface Config {
+export interface Config {
     env: string
+    isProd: boolean
     port:  number
     dbUser: string
     dbPassword: string
@@ -10,5 +11,10 @@ interface Config {
     dbMaxConnections: number
     dbIdleTimeoutMillis: number
     dbConnectionTimeoutMillis: number
+    dbUrl?: string
 
   }
+
+export interface GetInformationFilters {
+    title?: string
+}
