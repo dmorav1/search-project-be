@@ -1,6 +1,7 @@
 {
   "name": "vertical-search-be",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "1.0.0",
   "description": "Backend for search project",
   "main": "src/index.ts",
@@ -24,6 +25,8 @@
     "sequelize": "~6.11.0",
     "sequelize-cli": "~6.4.1"
 =======
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
   "version": "0.0.10",
   "description": "Backend for search project",
   "main": "src/index.js",
@@ -45,12 +48,16 @@
     "helmet": "^5.0.2",
     "pg": "^8.7.1",
     "sequelize": "^6.12.0-beta.2"
+<<<<<<< HEAD
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
   },
   "engine": {
     "node": "16.x"
   },
   "devDependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
     "@types/nodemon": "~1.19.1",
     "dotenv": "~10.0.0",
@@ -67,6 +74,8 @@
     "tslint": "~6.1.3",
     "typescript": "~4.5.5"
 =======
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
     "@types/nodemon": "^1.19.1",
     "dotenv": "^10.0.0",
     "dotenv-cli": "^4.1.1",
@@ -79,11 +88,15 @@
     "sequelize-cli": "^6.4.1",
     "tslint": "^6.1.3",
     "typescript": "^4.5.5"
+<<<<<<< HEAD
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
   },
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     
@@ -96,6 +109,8 @@
     "dev-migrations:run": " dotenv -e .env sequelize db:migrate",
     "migrations:run": "sequelize-cli db:migrate",
 =======
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
     "prestart": "npm run build",
     "dev": "dotenv -e .env nodemon dist/index.js",
     "start": "node src/index.js",
@@ -103,7 +118,10 @@
     "lint": "eslint",
     "migrations:generate": "sequelize-cli migration:generate --name",
     "migrations:run": " dotenv -e .env sequelize db:migrate",
+<<<<<<< HEAD
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
     "migrations:revert": " dotenv -e .env sequelize-cli db:migrate:undo",
     "migrations:delete": "sequelize-cli db:migrate:undo:all",
     "seeds:generate": "dotenv -e .env sequelize-cli seed:generate --name",

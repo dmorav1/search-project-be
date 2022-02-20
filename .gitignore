@@ -195,8 +195,12 @@ $RECYCLE.BIN/
 data
 dist
 <<<<<<< HEAD
+<<<<<<< HEAD
 .vscode
 =======
 
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 # End of https://www.toptal.com/developers/gitignore/api/node,windows,linux,macos

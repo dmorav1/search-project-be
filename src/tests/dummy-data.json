@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"demo_information":[
     {
         
@@ -19,6 +20,8 @@
         "created_at":"2020-05-06T18:00:00.000Z",
         "is_active":true
 =======
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 {"demo_discussions":[
     
     {
@@ -99,11 +102,15 @@
         "description": "Inglés",
         "created_at": "2022-01-18T00:00:00.000Z",
         "is_active": true
+<<<<<<< HEAD
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 
     },
     {
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         "title":"Cat Image 3",
         "description":"This is a demo of the information page",
@@ -116,10 +123,16 @@
         "created_at": "2022-01-18T00:00:00.000Z",
         "is_active": true
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+        "description": "Comunidad",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 
     },
     {
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         "title":"Cat Image 4",
         "description":"This is a demo of the information page",
@@ -132,10 +145,16 @@
         "created_at": "2022-01-18T00:00:00.000Z",
         "is_active": true
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+        "description": "Startups",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 
     },
     {
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         "title":"Cat Image 5",
         "description":"This is a demo of the information page",
@@ -148,10 +167,16 @@
         "created_at": "2022-01-18T00:00:00.000Z",
         "is_active": true
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+        "description": "Marketing",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 
     },
     {
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         "title":"Cat Image 6",
         "description":"This is a demo of the information page",
@@ -164,10 +189,16 @@
         "created_at": "2022-01-18T00:00:00.000Z",
         "is_active": true
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+        "description": "Diseño y UX",
+        "created_at": "2022-01-18T00:00:00.000Z",
+        "is_active": true
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 
     },
     {
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         "title":"Cat Image 7",
         "description":"This is a demo of the information page",
@@ -184,6 +215,8 @@
 
 
 =======
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
         "description": "Desarrollo e Ingeniería",
         "created_at": "2022-01-18T00:00:00.000Z",
         "is_active": true
@@ -252,5 +285,8 @@
 
 
 
+<<<<<<< HEAD
 >>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
+=======
+>>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
 }
