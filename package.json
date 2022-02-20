@@ -1,0 +1,76 @@
+{
+  "name": "vertical-search-be",
+  "version": "1.0.0",
+  "description": "Backend for search project",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@hapi/boom": "~9.1.4",
+    "@hapi/joi": "~17.1.1",
+    "@types/boom": "~7.3.1",
+    "@types/cors": "~2.8.12",
+    "@types/express": "~4.17.13",
+    "@types/hapi__joi": "~17.1.8",
+    "@types/jest": "~27.4.0",
+    "@types/node": "~17.0.18",
+    "@types/pg": "~8.6.4",
+    "@types/sequelize": "~4.28.11",
+    "@types/validator": "~13.7.1",
+    "cors": "~2.8.5",
+    "express": "~4.17.1",
+    "faker": "~5.5.3",
+    "helmet": "~5.0.2",
+    "pg": "~8.7.1",
+    "sequelize": "~6.11.0",
+    "sequelize-cli": "~6.4.1"
+  },
+  "engine": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "@types/nodemon": "~1.19.1",
+    "dotenv": "~10.0.0",
+    "dotenv-cli": "~4.1.1",
+    "eslint": "~8.4.1",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-prettier": "~4.0.0",
+    "jest": "~27.4.4",
+    "nodemon": "~2.0.15",
+    "prettier": "~2.5.1",
+    "sequelize-cli": "~6.4.1",
+    "ts-jest": "~27.1.3",
+    "ts-node": "~10.5.0",
+    "tslint": "~6.1.3",
+    "typescript": "~4.5.5"
+  },
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    
+    
+    "postinstall": "npm run build",
+    "dev": "dotenv -e .env nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint",
+    "migrations:generate": "sequelize-cli migration:generate --name",
+    "dev-migrations:run": " dotenv -e .env sequelize db:migrate",
+    "migrations:run": "sequelize-cli db:migrate",
+    "migrations:revert": " dotenv -e .env sequelize-cli db:migrate:undo",
+    "migrations:delete": "sequelize-cli db:migrate:undo:all",
+    "seeds:generate": "dotenv -e .env sequelize-cli seed:generate --name",
+    "seeds:load_all": "dotenv -e .env sequelize-cli db:seed:all",
+    "seeds:undo_all": "dotenv -e .env sequelize-cli db:seed:undo:all"
+  },
+  "keywords": [
+    "JS",
+    "ExpressJS",
+    "NodeJS",
+    "Sequelize",
+    "PostgreSQL",
+    "Search",
+    "Backend",
+    "Server"
+  ],
+  "author": "Diego Fernando Mora Velasco",
+  "license": "MIT"
+}

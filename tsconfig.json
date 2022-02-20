@@ -1,0 +1,30 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es2020",
+        "allowJs": true,
+        "checkJs": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        }
+    },
+    
+    "include": [
+        "src/**/*",
+        ".sequelizerc"
+    ],
+    "exlude": [
+        "node_modules",
+        "src/db/migrations/20220219164625-information-migration.js"
+    ]
+}

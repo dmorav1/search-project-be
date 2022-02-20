@@ -1,0 +1,78 @@
+{"demo_information":[
+    {
+        
+        "title":"Cat Image 1",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":true
+
+    },
+    {
+        
+        "title":"Cat Image 2",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":true
+
+    },
+    {
+        
+        "title":"Cat Image 3",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":true
+
+    },
+    {
+        
+        "title":"Cat Image 4",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":true
+
+    },
+    {
+        
+        "title":"Cat Image 5",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":false
+
+    },
+    {
+        
+        "title":"Cat Image 6",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":true
+
+    },
+    {
+        
+        "title":"Cat Image 7",
+        "description":"This is a demo of the information page",
+        "photo": "https://thiscatdoesnotexist.com/",
+        "short_description":"This is a demo of the information page",
+        "created_at":"2020-05-06T18:00:00.000Z",
+        "is_active":true
+    }
+
+    
+    
+    
+]
+
+
+}
