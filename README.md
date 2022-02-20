@@ -33,7 +33,7 @@ That will set up Postgres and PGAdmin 4 for initial setup. After that, run all m
 After migrations are completed, as an additional step you can copy information inside [./tests/dummy-data.json](./tests/dummy-data.json) and create a file under [./src/data/](./src/data) with the name `seed_data.json`. It contains the information for demo/testing purposes.
 
   
-  
+ Once you have done that you can load optional data for demo with command `npm run seeds:load_all`
   
 
 ### Running in dev
