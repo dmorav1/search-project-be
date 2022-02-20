@@ -9,6 +9,7 @@ if (config.isProd){
 }
 export  = {
 
+
   development: {
     url: URI,
     dialect: 'postgres',
@@ -23,6 +24,7 @@ export  = {
         rejectUnauthorized: false
       }
     }
+
 
   }
 }

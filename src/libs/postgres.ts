@@ -19,6 +19,7 @@ if (config.isProd){
         rejectUnauthorized: false
     }
 }
+
 class Postgres {
     connection: Pool
 
@@ -39,6 +40,7 @@ class Postgres {
         try {
             if (!this.connection ) {
                this.connection = new Pool(options)
+
                 console.log('Connected succesfully')
             }
             return this.connection

@@ -120,7 +120,7 @@ GET `/api/information?title=3`
     }
 ]
 ```
-
+search is case-senssitive.
 ### Get Details for a record stored in database
 In the case you want to retrieve the details of one particular item, you can perform a GET http request to endpoint `/api/information/{id}` passing the id as parameter. This operation will retrieve: 
 

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "vertical-project-be @ e6eb27a",
+			"uri": "gitlens://e6eb27a/home/difemove/proyectos/vertical-project-be?{\"path\":\"/home/difemove/proyectos/vertical-project-be\",\"ref\":\"e6eb27a4c35f8bf72a64267758a15aeb929d45ce\",\"repoPath\":\"/home/difemove/proyectos/vertical-project-be\"}"
+		}
+	],
+	"remoteAuthority": "wsl+ubuntu-20.04",
+	"settings": {}
+}

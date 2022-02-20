@@ -32,3 +32,4 @@ setupModels(sequelize)
 // sequelize.sync({force: false})
 
 export =sequelize
+

@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "c3efaad5-54ae-473d-a31f-770a773ce93a",
+		"name": "vertical-search-be Endpoints Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Discussions",
+			"item": [
+				{
+					"name": "Create Discussion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\"title\": \"Example Title\",\r\n\t\"content\": \"Example Content\",\r\n\t\"categoryId\": 1,\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/discussions/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"discussions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discussion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/discussions/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"discussions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all discussions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/discussions/?limit=1&offset=0",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"discussions",
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a discussion",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\"title\": \"Example Title\",\r\n\t\"content\": \"Example Content\",\r\n\t\"category\": 1,\r\n    \"created_by\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/discussions/5",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"discussions",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a discussion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/discussions/5",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"discussions",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discussion Likes",
+			"item": [
+				{
+					"name": "Create Discussion Like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\"discussionId\": 1,\r\n    \"userId\":101\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discussion like",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions?discussionId=1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions"
+							],
+							"query": [
+								{
+									"key": "discussionId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discussion like count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions?discussionId=1&groupBy=discussionId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions"
+							],
+							"query": [
+								{
+									"key": "discussionId",
+									"value": "1"
+								},
+								{
+									"key": "groupBy",
+									"value": "discussionId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discussion like count for a user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions/1?userId=101",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions",
+								"1"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discussion like for user and discussion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions?userId=101&discussionId=53",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "101"
+								},
+								{
+									"key": "discussionId",
+									"value": "53"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discussion like count for user and discussion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions?userId=101&discussionId=53&groupBy=discussionId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "101"
+								},
+								{
+									"key": "discussionId",
+									"value": "53"
+								},
+								{
+									"key": "groupBy",
+									"value": "discussionId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all discussions likes count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions?groupBy=discussionId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions"
+							],
+							"query": [
+								{
+									"key": "groupBy",
+									"value": "discussionId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all discussions likes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Likes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/users/101",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"users",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a discussion",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\"discussionId\": 1,\r\n    \"userId\":102\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a discussion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/likes/discussions/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"likes",
+								"discussions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contributions",
+			"item": [
+				{
+					"name": "Create Contribution",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\r\n  \"content\": \"Pa ke kieres saber eso jaja salu2\",\r\n  \"userId\": 1,\r\n  \"contributionTypeId\": 1, \r\n  \"discussionId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/contributions/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"contributions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get comments",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Questions",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
