@@ -25,9 +25,7 @@ if (config.isProd){
 }
 
 const sequelize= new Sequelize( URI,
-    {
-
-})
+    options)
 
 setupModels(sequelize)
 
