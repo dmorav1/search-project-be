@@ -20,7 +20,8 @@
     "faker": "~5.5.3",
     "helmet": "~5.0.2",
     "pg": "~8.7.1",
-    "sequelize": "~6.11.0"
+    "sequelize": "~6.11.0",
+    "sequelize-cli": "~6.4.1"
   },
   "engine": {
     "node": "16.x"
@@ -44,9 +45,11 @@
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
-    "prestart": "npm run build",
+    
+    
+    "postinstall": "npm run build",
     "dev": "dotenv -e .env nodemon src/index.ts",
-    "start": "npm run build && node dist/index.js",
+    "start": "node dist/index.js",
     "test": "jest",
     "lint": "eslint",
     "migrations:generate": "sequelize-cli migration:generate --name",
