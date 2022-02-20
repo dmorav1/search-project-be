@@ -5,7 +5,6 @@ import {setupModels} from "../db/models"
 
 const USER = encodeURIComponent(config.dbUser)
 const PASSWORD = encodeURIComponent(config.dbPassword)
-<<<<<<< HEAD
 let URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
 
 if (config.isProd){
@@ -33,20 +32,4 @@ setupModels(sequelize)
 // sequelize.sync({force: false})
 
 export =sequelize
-=======
-const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
 
-
-const sequelize= new Sequelize( URI,
-    {
-    dialect: 'postgres',
-    logging: true,
-    schema: config.dbSchema
-})
-
-setupModels(sequelize)
-
-sequelize.sync({force: false})
-
-export {sequelize}
->>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
