@@ -1,9 +1,9 @@
 import InformationService from "../../../services/information.service"
-import { GetInformationFilters } from "../../../helpers/types"
+// import { GetInformationFilters } from "../../../helpers/types"
 import {getAll as informationDalGetAll,
         getById as informationDalGetById} from "../../../db/dal/information"
-import {models} from "../../../libs/sequelize"
-import { Op } from "sequelize"
+// import {models} from "../../../libs/sequelize"
+// import { Op } from "sequelize"
 jest.mock("../../../db/dal/information", ()=> (
     {
         getAll: jest.fn(),
