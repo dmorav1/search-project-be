@@ -14,15 +14,5 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "search-project-be" #Must be unique in Heroku
-<<<<<<< HEAD
-<<<<<<< HEAD
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           healthcheck: ${{secrets.HEROKU_URL}}
-=======
-          heroku_email: "difemove@gmail.com"
-          healthcheck: "https://search-project-be.herokuapp.com/health"
->>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
-=======
-          heroku_email: "difemove@gmail.com"
-          healthcheck: "https://search-project-be.herokuapp.com/health"
->>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4

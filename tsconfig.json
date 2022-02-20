@@ -11,15 +11,7 @@
         "sourceMap": true,
         "outDir": "./dist",
         "baseUrl": ".",
-<<<<<<< HEAD
         "resolveJsonModule": true,
-<<<<<<< HEAD
-=======
->>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
-=======
->>>>>>> 07cf2f4... V 1.0.0 with information endpoint
-=======
->>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
         "paths": {
             "*": [
                 "node_modules/*"
@@ -28,26 +20,11 @@
     },
     
     "include": [
-<<<<<<< HEAD
         "src/**/*",
         ".sequelizerc"
     ],
     "exlude": [
         "node_modules",
         "src/db/migrations/20220219164625-information-migration.js"
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
-        "src/**/*"
-    ],
-    "exlude": [
-        "node_modules",
-<<<<<<< HEAD
->>>>>>> 360e6f1... chore: Node JS boilerplate: (#3)
-=======
->>>>>>> 07cf2f4... V 1.0.0 with information endpoint
-=======
->>>>>>> 360e6f152a3c26774033c0827ef0d02d00f8c1e4
     ]
 }
