@@ -45,7 +45,7 @@
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
-    "prestart": "npm run build",
+    
     
     "postinstall": "npm run build",
     "dev": "dotenv -e .env nodemon src/index.ts",
