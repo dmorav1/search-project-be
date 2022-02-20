@@ -20,7 +20,8 @@
     "faker": "~5.5.3",
     "helmet": "~5.0.2",
     "pg": "~8.7.1",
-    "sequelize": "~6.11.0"
+    "sequelize": "~6.11.0",
+    "sequelize-cli": "~6.4.1"
   },
   "engine": {
     "node": "16.x"
