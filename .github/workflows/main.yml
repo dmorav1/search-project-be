@@ -14,5 +14,5 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "search-project-be" #Must be unique in Heroku
-          heroku_email: "difemove@gmail.com"
-          healthcheck: "https://search-project-be.herokuapp.com/health"
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          healthcheck: ${{secrets.HEROKU_URL}}

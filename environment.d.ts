@@ -12,6 +12,7 @@ declare global {
         DB_MAX_CONNECTIONS? : string
         DB_IDLE_TIMEOUT_MILLIS? : string
         DB_CONNECTION_TIMEOUT_MILLIS? : string
+        DATABASE_URL? : string
       }
     }
   }

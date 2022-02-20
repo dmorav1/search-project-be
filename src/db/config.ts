@@ -2,9 +2,12 @@ import { config } from  "./../config/config"
 
 const USER = encodeURIComponent(config.dbUser)
 const PASSWORD = encodeURIComponent(config.dbPassword)
-const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
+let URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`
 
-module.exports = {
+if (config.isProd){
+    URI = config.dbUrl
+}
+export  = {
 
   development: {
     url: URI,
@@ -14,6 +17,12 @@ module.exports = {
   production: {
     url: URI,
     dialect: 'postgres',
-    migrationStorageTableSchema: config.dbSchema
+    migrationStorageTableSchema: config.dbSchema,
+    dialectOptions:{
+      ssl: {
+        rejectUnauthorized: false
+      }
+    }
+
   }
 }
